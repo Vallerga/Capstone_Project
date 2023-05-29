@@ -17,10 +17,10 @@ public class ReportRunner implements ApplicationRunner {
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		if(repService.findAllReport().isEmpty())
-			for (int i = 0; i < 10; i++) {
-				repService.createFakeReport();
-			}
+		// if(repService.findAllReport().isEmpty())
+		//	for (int i = 0; i < 10; i++) {
+		//		repService.createFakeReport();
+		//	}
 
 	}
 

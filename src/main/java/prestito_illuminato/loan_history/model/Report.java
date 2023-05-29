@@ -1,5 +1,7 @@
 package prestito_illuminato.loan_history.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +22,7 @@ import prestito_illuminato.auth.entity.User;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Report {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -32,7 +34,9 @@ public class Report {
 	private Double rate;
 	private Double taeg;
 	private Double monthlyRate;
+
 	@ManyToOne
+	@JsonIgnoreProperties({ "user" })
 	@JoinColumn(name = "user_id")
 	private User user;
-	}
+}

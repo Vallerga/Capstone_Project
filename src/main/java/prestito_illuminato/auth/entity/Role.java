@@ -1,5 +1,7 @@
 package prestito_illuminato.auth.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,7 +21,7 @@ public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+        
     @Enumerated(EnumType.STRING)
 	private ERole roleName;
 }

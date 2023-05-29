@@ -12,6 +12,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -33,11 +35,11 @@ public class User {
 	private String email;
 	@Column(nullable = false)
 	private String password;
-
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
 	private Set<Role> roles = new HashSet<>();
-	@OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = { CascadeType.MERGE, CascadeType.REMOVE,
-			CascadeType.REFRESH, CascadeType.PERSIST })
-	private List<Report> reports;
+	// @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = { CascadeType.MERGE, CascadeType.REMOVE,
+	// 		CascadeType.REFRESH, CascadeType.PERSIST })
+	// @JsonIgnoreProperties({"reports"})
+	// private List<Report> reports;
 }
