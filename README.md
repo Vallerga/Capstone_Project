@@ -1,4 +1,4 @@
-#sinossi capstone project - **PRESTITO ILLUMINATO
+# sinossi capstone project - **PRESTITO ILLUMINATO**
 
 La mia applicazione web ha come obiettivo offrire agli utenti un servizio di consulenza per prestiti finanziari. Il core dell'applicazione è la possibilità, in base ad una serie di valori, di determinare la fattibilità del prestito e stabilire dinamicamente l'ammontare mensile in base a parametri scelti dal utente dinamicamente come il TAEG, tasso fisso o mobile, durata mutuo, importo prestito, ecc.
 
@@ -10,8 +10,8 @@ La piattaforma tiene in memoria le credenziali dell'utente e salva le precedenti
 
 L'applicativo è stato sviluppato come una applicazione a pagina singola ed è pienamente responsivo per tutti i formati: mobile, tablet, full screen, 4k.
 
-##Tecnologie utilizzate
-##Front-End:
+## Tecnologie utilizzate
+## Front-End:
 
 - JavaScript
 - HTML/CSS
@@ -20,31 +20,31 @@ L'applicativo è stato sviluppato come una applicazione a pagina singola ed è p
 - React Redux
 - React Router Dom
 
-##Back-End:
+## Back-End:
 - Java
 - Spring Boot
 - PostgreSQL
 - Hibernate
 - JWT
 
-##Struttura Front-End
+## Struttura Front-End
 
 Il sito sarà strutturato nelle seguenti sezioni:
 
-###Pagina di accesso:
+### Pagina di accesso:
 E' richiesta la registrazione al sito, avvenuta la quale è possibile accedere al sito mantendo in memoria le nostre credenziale se si seleziona la spunta indicata. In qualsiasi momento sarà possibile scollegarsi grazie all'apposito tasto sulla NavBar.
 
-###Home:
+### Home:
 - Vi è una presentazione del prodotto con le recensione degli utenti
 - Possiamo svolgere un breve questionario per migliorare personalizzare la richiesta mutuo.
 - Altrimenti si accede direttamente alla simulazione mutuo
 
-###Simulazione mutuo:
+### Simulazione mutuo:
 - Il portate permette di modificare granularmente il mutuo e di valutare in diretta l'impatto delle modifiche.
 - Completata la simulazione possiamo finalizzarla salvandola nel database associato al nostro profilo e richiedere una consulenza.
 - sarà sempre possibile accedere allo storico dei precendenti mutuo
 
-##Struttura Back-End
+## Struttura Back-End
 
 L'applicativo prevede due sezione separate anche se relazionate: la gestione della security e la gestione dello storico delle simulazioni.
 
