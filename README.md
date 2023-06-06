@@ -1,8 +1,8 @@
 Per accedere alla parte Front-End potete liberamente consultare: [repository Capstone Project Front-End](https://github.com/Vallerga/Capstone_Project_FE.git)
 
-```
+
 <span style="color:#210070">SINOSSI CAPSTONE PROJECT - <strong>PRESTITO ILLUMINATO</strong></span>
-```
+
 
 La mia applicazione web ha come obiettivo offrire agli utenti un servizio di consulenza per prestiti finanziari. Il core dell'applicazione è la possibilità, in base ad una serie di valori, di determinare la fattibilità del prestito e stabilire dinamicamente l'ammontare mensile in base a parametri scelti dal utente dinamicamente come il TAEG, tasso fisso o mobile, durata mutuo, importo prestito, ecc.
 
