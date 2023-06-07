@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import jakarta.persistence.EntityNotFoundException;
+import prestito_illuminato.auth.entity.User;
+import prestito_illuminato.auth.repository.UserRepository;
 import prestito_illuminato.loan_history.model.Report;
 import prestito_illuminato.loan_history.repository.reportDAO;
 
@@ -15,6 +17,9 @@ import prestito_illuminato.loan_history.repository.reportDAO;
 public class ReportService {
 	@Autowired
 	private reportDAO reportDao;
+	
+	@Autowired
+	private UserRepository userDao;
 	
 	@Autowired
 	@Qualifier("FakeReport")
@@ -68,6 +73,10 @@ public class ReportService {
 	
 	public List<Report> findAllReport() {
 		return(List<Report>) reportDao.findAll();
+	}
+	
+	public List<User> findAllUser() {
+		return(List<User>) userDao.findAll();
 	}
 	
 }

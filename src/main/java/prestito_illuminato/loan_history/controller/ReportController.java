@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import prestito_illuminato.auth.entity.User;
 import prestito_illuminato.loan_history.model.Report;
 import prestito_illuminato.loan_history.service.ReportService;
 
@@ -55,4 +56,9 @@ public class ReportController {
 		return new ResponseEntity<String>(addService.deleteReport(id), HttpStatus.OK);
 	}
 	
+	@GetMapping("/users")
+	public ResponseEntity<?> findAllUsers() {
+		return new ResponseEntity<List<User>>(addService.findAllUser(), HttpStatus.OK);
+	}
+
 }
