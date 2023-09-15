@@ -7,7 +7,7 @@
 
 👨‍💻 Per accedere alla parte Front-End potete liberamente consultare: [repository Capstone Project Front-End](https://github.com/Vallerga/Capstone_Project_FE.git)
 
-[https://github.com/tandpfun/skill-icons/blob/main/icons/Postman.svg](https://www.postman.com/)
+[https://www.postman.com/](https://github.com/tandpfun/skill-icons/blob/main/icons/Postman.svg)
 
 # SINOSSI CAPSTONE PROJECT - **PRESTITO ILLUMINATO**
 
